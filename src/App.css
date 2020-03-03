@@ -1,0 +1,26 @@
+body{
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+.loader{
+  display: inline-block;  
+  background-color: white;
+  border-radius: 5rem;
+  padding: 5px;
+}
+
+.loader__text{
+  font-size: xx-large;
+  font-style: italic;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.movies{
+  display: inline-block; 
+  background-color: grey;
+  width: 500px;
+  border-radius: 2rem;
+  padding: 10px;  
+}

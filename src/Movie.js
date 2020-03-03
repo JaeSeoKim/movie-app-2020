@@ -1,5 +1,6 @@
 import React from "react";
 import prototype from "prop-types";
+import "./Movie.css"
 
 Movie.prototype = {
   id : prototype.number.isRequired,
@@ -13,13 +14,14 @@ function Movie({
   title,
   year,
   rating,
+  summary,
   poster
 }){
-  return <div>
-    <img src={poster} alt={title}/>
-    <h4>{title}</h4>
-    <h5>{year}</h5>
-    <h5>{rating}</h5>
+  return <div class="movie">
+      <img class="movie__img" src={poster} alt={title} title={title}/>
+      <h3 class="movie__title">{title}</h3>
+      <h5 class="movie__year_rating">{year} | {rating}</h5>
+      <p class="movie__summary">{summary}</p>
     </div>
 }
 

@@ -1,0 +1,22 @@
+.movie{
+  background-color: white;
+  margin: 10px;
+  border-radius: 2rem;
+  padding: 5px;  
+}
+.movie__img{
+  
+}
+.movie__title{
+  font-size: x-large;
+  font-style: bold;
+}
+.movie__year_rating{
+  font-size: small;
+  font-style: italic;
+}
+.movie__summary{
+  text-align: left;
+  font-size: medium;
+  padding-left: 5px;
+}
