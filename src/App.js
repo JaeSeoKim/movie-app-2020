@@ -26,6 +26,7 @@ class App extends React.Component {
     return <div>
       {isLoading ? <h1>Now Loading...</h1> : movies.map(movie =>(
         <Movie 
+          key={movie.id}
           id={movie.id}
           title={movie.title}
           year={movie.year}
