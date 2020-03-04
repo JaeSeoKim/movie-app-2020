@@ -1,3 +1,7 @@
+.movies .movie:nth-child(1), .movies .movie:nth-child(2){
+  margin-top: 50px;
+}
+
 .movies .movie {
   width: 45%;
   background-color: white;
