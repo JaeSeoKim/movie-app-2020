@@ -1,9 +1,8 @@
 import React from "react";
 import prototype from "prop-types";
-import {Link} from 'react-router-dom';
-import "./Movie.css";
+import "./Info.css";
 
-Movie.prototype = {
+Info.prototype = {
   id : prototype.number.isRequired,
   title : prototype.string.isRequired,
   year: prototype.number.isRequired,
@@ -12,7 +11,7 @@ Movie.prototype = {
   genres: prototype.arrayOf(prototype.string).isRequired
 }
 
-function Movie({
+function Info({
   id,
   title,
   year,
@@ -21,18 +20,7 @@ function Movie({
   poster,
   genres
 }){
-  return <Link to={{
-      pathname:`/movie/${id}`,
-      state:{
-      id,
-      title,
-      year,
-      rating,
-      summary,
-      poster,
-      genres
-      }
-    }}>
+  return <div className="infomation">
       <div className="movie">
         <img className="movie__img" src={poster} alt={title} title={title}/>
         <div className="movie__data">
@@ -42,10 +30,10 @@ function Movie({
           {genres.map((genre, index )=> 
             <li key={index} className="genres__genre">{genre}</li>)
           }</ul>
-          <p className="movie__summary">{summary.slice(0, 180)}...</p>
+          <p className="movie__summary">{summary}</p>
         </div>
       </div>
-    </Link>
+    </div>
 }
 
-export default Movie;
+export default Info;
